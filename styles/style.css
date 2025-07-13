@@ -16,7 +16,7 @@
   background-image: url(../illustration_ones/cover-illustration_one-dark.png);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; /* фиксация фона */
+  background-attachment: fixed; /*фиксируем фон на месте*/
   padding-inline: calc(10px + (100vw - 375px) * 0.0254);
   /* padding-inline-end: calc(10px + (100vw - 375px) * .0254); */
   /* display: grid;
