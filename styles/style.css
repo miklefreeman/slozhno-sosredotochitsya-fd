@@ -2,4 +2,296 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  gap: 40px;
+  font-family: "IBM Plex mono", sans-serif;
+  font-size: 18px;
+  background-color: var(--bg-color);
+  background-image: url(../illustration_ones/cover-illustration_one-dark.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /* фиксация фона */
+  padding-inline: calc(10px + (100vw - 375px) * 0.0254);
+  /* padding-inline-end: calc(10px + (100vw - 375px) * .0254); */
+  /* display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: calc(40px + .051 * (100vw - 375px)); */
+}
+
+.header {
+  grid-area: header;
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  max-inline-size: 100%;
+  block-size: 100vh;
+  padding-block: calc(75px + 0.298 * (100vw - 375px))
+    calc(66px + 0.298 * (100vw - 375px));
+}
+
+.corner {
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.corner-top {
+  position: absolute;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+  inset-block-start: calc(10px + (100vw - 375px) * 0.0254);
+  inset-inline-end: 0;
+}
+
+.corner-bottom {
+  position: absolute;
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+  inset-block-end: calc(10px + (100vw - 375px) * 0.0254);
+  inset-inline-start: 0;
+}
+
+.spec-element {
+  position: absolute;
+  color: var(--accent-color-spec);
+  inset-block-start: calc(10px + (100vw - 375px) * 0.015);
+  inset-inline-end: 28px;
+}
+
+.spec-element::after {
+  content: "";
+  position: absolute;
+  /* inset-block-start: calc(8px + (100vw - 375px) * .0254); */
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: var(--accent-color-spec);
+  border-radius: 50%;
+  box-shadow: -1px -1px 3px 1px var(--color-spec-element),
+    -1px 1px 3px 1px var(--color-spec-element),
+    1px -1px 3px 1px var(--color-spec-element),
+    1px 1px 3px 1px var(--color-spec-element);
+  margin-inline-start: 10px;
+  margin-block-start: 8px;
+}
+.header__theme-menu {
+  grid-row: 1 / 2;
+  justify-self: self-end;
+  margin-block-start: 30px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  inline-size: 70px;
+  block-size: 98px;
+}
+
+.header__theme-menu-button {
+  inline-size: 70px;
+  block-size: 26px;
+  border-block: 1px solid transparent;
+  border-inline: 1px solid transparent;
+  color: var(--nav-color);
+  /* color: var(#ff0070); */
+  background-color: transparent;
+}
+/*
+.header__theme-menu-button_type_light {
+  border-block: 1px solid var(--text-color);
+  border-inline: 1px solid var(--text-color);
+
+}
+*/ /*
+.header__theme-menu-button_type_light {
+  pointer-events: none;
+}
+*/ /*
+.header__theme-menu-button_type_dark {
+  pointer-events: none;
+} */
+
+.header__theme-menu-button:hover {
+  border-block: 1px solid rgb(100%, 0%, 44%, 0.4);
+  border-inline: 1px solid rgb(100%, 0%, 44%, 0.4);
+}
+
+.header__theme-menu-button_active {
+  border-block: 1px solid var(--nav-color);
+  border-inline: 1px solid var(--nav-color);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block: 1px solid transparent;
+  border-inline: 1px solid transparent;
+  border-block-end: 1px solid var(--nav-color);
+  outline: none;
+}
+
+.title {
+  grid-row: 2 / 3;
+  display: inline-block;
+  align-self: center;
+  font-size: clamp(
+    7.25rem,
+    7.0115rem + 1.0178vw,
+    7.5rem
+  ); /* сгенерированно на https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjMyMHB4IiwibWF4V2lkdGgiOiIxNDU2cHgiLCJtaW5Gb250U2l6ZSI6IjE0cHgiLCJtYXhGb250U2l6ZSI6IjIwcHgifQ%3D%3D */
+  line-height: 82.5%;
+  color: var(--title-color);
+  /*text-shadow: .04em .04em 0 var(--accent-color); */
+  /*text-shadow: 4px 4px 0 var(--accent-color); */
+  filter: drop-shadow(0.04em 0.04em var(--accent-color));
+  margin-inline-start: calc(- (0.191px * (100vw - 375px)));
+}
+
+.header__h3 {
+  grid-row: 3 / 4;
+  justify-self: self-end;
+  align-self: self-end;
+  font-size: inherit;
+  inline-size: calc(355px + (100% - 355px) * 0.02);
+}
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "why"
+    "what"
+    "how"
+    "illustration";
+  gap: 50px;
+}
+
+.why {
+  grid-area: why;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "title"
+    "multitasking"
+    "dopamine";
+  gap: 20px;
+}
+
+.general-text {
+  font-size: 18px;
+  color: var(--accent-color);
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  margin-block-end: 10px;
+}
+
+.simple-text {
+  color: var(--text-color);
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 2.5px 2px 0 var(--accent-color);
+}
+
+.link:hover {
+  border-block-end: 1px solid var(--text-color);
+}
+
+.link:focus {
+  border-block: none;
+  outline: 1px solid var(--text-color);
+}
+
+.what {
+  grid-area: what;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "title"
+    "multitasking"
+    "food"
+    "gadgets";
+  gap: 20px;
+}
+
+.how {
+  grid-area: how;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas:
+    "tite"
+    "adviсe"
+    "meditation"
+    "music"
+    "walks"
+    "nutrition"
+    "reading";
+  gap: 20px;
+}
+
+.how_title-decor {
+  margin-block: 0;
+}
+
+.how__title-decor {
+  border-block: none;
+  font-weight: normal;
+}
+
+.illustration {
+  grid-area: illustration;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "title"
+    "illustration_one"
+    "illustration_two"
+    "illustration_three"
+    "illustration_four"
+    "illustration_vive";
+  gap: 10px;
+}
+
+.illustration__image {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer {
+  grid-area: footer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 100vh;
+}
+
+.footer__title {
+  display: inline-block;
+  inline-size: auto;
+  block-size: auto;
+  /*  text-shadow: .000em .000em 0 var(--accent-color); */
+  /*  text-shadow: 4px 4px 0 var(--accent-color); */
+  /*  filter: drop-shadow(.04em .04em var(--accent-color)); */
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: bold;
+  color: var(--title-color);
+  filter: drop-shadow(0.025em 0.025em var(--accent-color));
 }
