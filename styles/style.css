@@ -14,7 +14,8 @@
   font-size: 18px;
   background-color: var(--bg-color);
   background-image: url(../illustration_ones/cover-illustration_one-dark.png);
-  background-attachment: fixed; /*фиксируем фон на месте*/
+  background-attachment: fixed;
+  /*фиксируем фон на месте*/
   background-position: center;
   background-size: cover;
   padding-inline: calc(10px + (100vw - 375px) * 0.0254);
@@ -31,8 +32,7 @@
   grid-template-rows: repeat(3, auto);
   max-inline-size: 100%;
   block-size: 100vh;
-  padding-block: calc(75px + 0.298 * (100vw - 375px))
-    calc(66px + 0.298 * (100vw - 375px));
+  padding-block: calc(75px + 0.298 * (100vw - 375px)) calc(66px + 0.298 * (100vw - 375px));
 }
 
 .corner {
@@ -78,6 +78,7 @@
   margin-inline-start: 10px;
   margin-block-start: 8px;
 }
+
 .header__theme-menu {
   grid-row: 1 / 2;
   justify-self: self-end;
@@ -103,17 +104,20 @@
   /* color: var(#ff0070); */
   background-color: transparent;
 }
+
 /*
 .header__theme-menu-button_type_light {
   border-block: 1px solid var(--text-color);
   border-inline: 1px solid var(--text-color);
 
 }
-*/ /*
+*/
+/*
 .header__theme-menu-button_type_light {
   pointer-events: none;
 }
-*/ /*
+*/
+/*
 .header__theme-menu-button_type_dark {
   pointer-events: none;
 } */
@@ -140,11 +144,10 @@
   grid-row: 2 / 3;
   display: inline-block;
   align-self: center;
-  font-size: clamp(
-    7.25rem,
-    7.0115rem + 1.0178vw,
-    7.5rem
-  ); /* расчет сгенерирован с сайта https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjMyMHB4IiwibWF4V2lkdGgiOiIxNDU2cHgiLCJtaW5Gb250U2l6ZSI6IjE0cHgiLCJtYXhGb250U2l6ZSI6IjIwcHgifQ%3D%3D */
+  font-size: clamp(7.25rem,
+      7.0115rem + 1.0178vw,
+      7.5rem);
+  /* расчет сгенерирован с сайта https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjMyMHB4IiwibWF4V2lkdGgiOiIxNDU2cHgiLCJtaW5Gb250U2l6ZSI6IjE0cHgiLCJtYXhGb250U2l6ZSI6IjIwcHgifQ%3D%3D */
   line-height: 82.5%;
   color: var(--title-color);
   /*text-shadow: .04em .04em 0 var(--accent-color); */
@@ -259,11 +262,11 @@
   grid-template-rows: repeat(6, auto);
   grid-template-areas:
     "title"
-    "illustration_sunset"
-    "illustration_ice-cream"
-    "illustration_tape"
-    "illustration_books"
-    "illustration_street";
+    "illustration_one"
+    "illustration_two"
+    "illustration_three"
+    "illustration_four"
+    "illustration_five";
   gap: 10px;
 }
 

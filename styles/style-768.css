@@ -1,1 +1,166 @@
+@media (width >=768px) {
+    .page {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "header header header"
+            " main main main"
+            "footer footer footer";
+        gap: 60px;
+        padding-inline: 20px;
+    }
 
+    .corner-top {
+        inset-block-start: 20px;
+    }
+
+    .corner-bottom {
+        inset-block-end: 10px;
+    }
+
+    .header {
+        padding-block: calc(192px - 0.672 * (100vw - 768px)) calc(173px - 0.1915 * (100vw - 768px));
+    }
+
+    .title {
+        margin-inline-start: -15px;
+    }
+
+    .header__h3 {
+        inline-size: calc(364px + (100% - 364px) * .205);
+    }
+
+    .main {
+        grid-template-columns: repeat(3 1fr);
+        grid-template-areas:
+            "why why why"
+            "what what what"
+            "how how how"
+            "illustration illustration illustration";
+        gap: 80px;
+    }
+
+    .why {
+        grid-template-columns: repeat(3, fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "title multitasking"
+            "title dopamine";
+    }
+
+    .why__h2 {
+        grid-area: title;
+    }
+
+    .why_multitasking {
+        grid-area: multitasking;
+    }
+
+    .why_dopamine {
+        grid-area: dopamine;
+    }
+
+    .what {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "title . ."
+            "multitasking multitasking multitasking"
+            "food food food"
+            "gadgets gadgets gadgets";
+    }
+
+    .what__h2 {
+        grid-area: title;
+    }
+
+    .what_multitasking {
+        grid-area: multitasking;
+    }
+
+    .what_food {
+        grid-area: food;
+    }
+
+    .what_gadgets {
+        grid-area: gadgets;
+    }
+
+    .how {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+            "title adviсe adviсe"
+            "title meditation meditation"
+            "title music music"
+            "title walks walks"
+            "title nutrition nutrition"
+            "title reading reading";
+    }
+
+    .how__h2 {
+        grid-area: title;
+    }
+
+    .how__h3 {
+        grid-area: adviсe;
+    }
+
+    .how_meditation {
+        grid-area: meditation;
+    }
+
+    .how_music {
+        grid-area: music;
+    }
+
+    .how_walks {
+        grid-area: walks;
+    }
+
+    .how_nutrition {
+        grid-area: nutrition;
+    }
+
+    .how_reading {
+        grid-area: reading;
+    }
+
+    .illustration {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "title title title"
+            "illustration_one illustration_one illustration_two"
+            "illustration_three illustration_four illustration_two"
+            "illustration_three illustration_five illustration_five";
+        gap: 20px;
+    }
+
+    .illustration>.general-text {
+        grid-area: title;
+        color: inherit;
+        background-color: var(--accent-color);
+    }
+
+    .illustration_one {
+        grid-area: illustration_one;
+    }
+
+    .illustration_two {
+        grid-area: illustration_two;
+    }
+
+    .illustration_three {
+        grid-area: illustration_three;
+    }
+
+    .illustration_four {
+        grid-area: illustration_four;
+    }
+
+    .illustration_five {
+        grid-area: illustration_five;
+    }
+}
+
+/*____________________________________________ >=1024 _________________________________________________________*/
