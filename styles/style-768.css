@@ -130,9 +130,9 @@
         grid-template-rows: repeat(4, auto);
         grid-template-areas:
             "title title title"
-            "illustration_one illustration_one illustration_two"
-            "illustration_three illustration_four illustration_two"
-            "illustration_three illustration_five illustration_five";
+            "illustration_sunset illustration_sunset illustration_ice-cream"
+            "illustration_tape illustration_four illustration_ice-cream"
+            "illustration_tape illustration_street illustration_street";
         gap: 20px;
     }
 
@@ -142,24 +142,24 @@
         background-color: var(--accent-color);
     }
 
-    .illustration_one {
-        grid-area: illustration_one;
+    .illustration_sunset {
+        grid-area: illustration_sunset;
     }
 
-    .illustration_two {
-        grid-area: illustration_two;
+    .illustration_ice-cream {
+        grid-area: illustration_ice-cream;
     }
 
-    .illustration_three {
-        grid-area: illustration_three;
+    .illustration_tape {
+        grid-area: illustration_tape;
     }
 
-    .illustration_four {
-        grid-area: illustration_four;
+    .illustration_books {
+        grid-area: illustration_books;
     }
 
-    .illustration_five {
-        grid-area: illustration_five;
+    .illustration_street {
+        grid-area: illustration_street;
     }
 }
 

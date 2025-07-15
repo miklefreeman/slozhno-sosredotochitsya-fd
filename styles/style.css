@@ -56,25 +56,25 @@
   inset-inline-start: 0;
 }
 
-.spec-element {
+.special-element {
   position: absolute;
-  color: var(--accent-color-spec);
+  color: var(--accent-color-special);
   inset-block-start: calc(10px + (100vw - 375px) * 0.015);
   inset-inline-end: 28px;
 }
 
-.spec-element::after {
+.special-element::after {
   content: "";
   position: absolute;
   /* inset-block-start: calc(8px + (100vw - 375px) * .0254); */
   inline-size: 9px;
   block-size: 9px;
-  background-color: var(--accent-color-spec);
+  background-color: var(--accent-color-special);
   border-radius: 50%;
-  box-shadow: -1px -1px 3px 1px var(--color-spec-element),
-    -1px 1px 3px 1px var(--color-spec-element),
-    1px -1px 3px 1px var(--color-spec-element),
-    1px 1px 3px 1px var(--color-spec-element);
+  box-shadow: -1px -1px 3px 1px var(--color-special-element),
+    -1px 1px 3px 1px var(--color-special-element),
+    1px -1px 3px 1px var(--color-special-element),
+    1px 1px 3px 1px var(--color-special-element);
   margin-inline-start: 10px;
   margin-block-start: 8px;
 }
