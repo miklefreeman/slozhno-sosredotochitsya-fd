@@ -16,9 +16,9 @@
   /* - color на кнопках смены темы*/
   --accent-color: #ff8dcb;
   /* — для акцентного цвета */
-  --accent-color-spec: transparent;
+  --accent-color-special: transparent;
   /* - для спец-элемента */
-  --color-spec-element: transparent;
+  --color-special-element: transparent;
   /* - для спец-элемента */
   --title-color: #ffc2e6;
   /*--main-font: 'IBM Plex Mono';     /* — имя семейства шрифта преобладающего текста (абзацы) */
@@ -36,9 +36,9 @@
     /* - color на кнопках смены темы*/
     --accent-color: #ff8dcb;
     /* — для акцентного цвета */
-    --accent-color-spec: transparent;
+    --accent-color-special: transparent;
     /* - для спец-элемента */
-    --color-spec-element: transparent;
+    --color-special-element: transparent;
     /* - для спец-элемента */
     --title-color: #ffc2e6;
   }
