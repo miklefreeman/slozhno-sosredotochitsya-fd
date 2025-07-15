@@ -262,11 +262,11 @@
   grid-template-rows: repeat(6, auto);
   grid-template-areas:
     "title"
-    "illustration_one"
-    "illustration_two"
-    "illustration_three"
-    "illustration_four"
-    "illustration_five";
+    "illustration_sunset"
+    "illustration_ice-cream"
+    "illustration_tape"
+    "illustration_books"
+    "illustration_street";
   gap: 10px;
 }
 
