@@ -139,7 +139,7 @@
 
   .illustration > .general-text {
     grid-area: title;
-    color: inherit;
+
     background-color: var(--accent-color);
   }
 

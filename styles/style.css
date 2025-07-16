@@ -13,7 +13,7 @@
   font-family: "IBM Plex mono", sans-serif;
   font-size: 18px;
   background-color: var(--bg-color);
-  background-image: url(../illustration_ones/cover-illustration_one-dark.png);
+
   background-attachment: fixed;
   /*фиксируем фон на месте*/
   background-position: center;
@@ -34,6 +34,9 @@
   block-size: 100vh;
   padding-block: calc(75px + 0.298 * (100vw - 375px))
     calc(66px + 0.298 * (100vw - 375px));
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .corner {
@@ -155,7 +158,7 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   /* расчет сгенерирован с сайта https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjMyMHB4IiwibWF4V2lkdGgiOiIxNDU2cHgiLCJtaW5Gb250U2l6ZSI6IjE0cHgiLCJtYXhGb250U2l6ZSI6IjIwcHgifQ%3D%3D */
   line-height: 82.5%;
-  color: var(--title-color);
+  color: var(--main-title-color);
   /*text-shadow: .04em .04em 0 var(--accent-color); */
   /*text-shadow: 4px 4px 0 var(--accent-color); */
   filter: drop-shadow(0.04em 0.04em var(--accent-color));
@@ -197,12 +200,13 @@
 
 .general-text {
   font-size: 18px;
-  color: var(--accent-color);
+  color: var(--title-color-focus);
 }
 
 .title-decor {
   background-color: var(--accent-color);
   margin-block-end: 10px;
+  color: var(--title-color-focus);
 }
 
 .simple-text {
@@ -301,7 +305,6 @@
   /*  filter: drop-shadow(.04em .04em var(--accent-color)); */
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: bold;
-  color: var(--title-color);
+  color: var(--main-title-color);
   filter: drop-shadow(0.025em 0.025em var(--accent-color));
 }
- 

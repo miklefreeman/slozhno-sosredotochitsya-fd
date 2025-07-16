@@ -21,8 +21,11 @@
   --color-special-element: transparent;
   /* - для спец-элемента */
   --title-color: #ffc2e6;
+  --title-color-focus: #353430; 
   /*--main-font: 'IBM Plex Mono';     /* — имя семейства шрифта преобладающего текста (абзацы) */
   /*--accent-font: 'IBM Plex Mono';   /* — шрифт для заголовков и особенных текстовых элементов */
+  --bg-image: url("../images/cover-image-light.png");
+  --main-title-color: #ffc2e6;
 }
 
 @media (prefers-color-scheme: light) {
@@ -40,7 +43,9 @@
     /* - для спец-элемента */
     --color-special-element: transparent;
     /* - для спец-элемента */
-    --title-color: #ffc2e6;
+    --title-color: #353430;
+    --bg-image: url("../images/cover-image-light.png");
+    --main-title-color: #ffc2e6;
   }
 }
 
