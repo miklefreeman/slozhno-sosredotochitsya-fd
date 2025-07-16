@@ -1,38 +1,37 @@
 @media (width >=1024px) {
-    .page {
-        display: grid;
-        gap: 80px;
-    }
+  .page {
+    display: grid;
+    gap: 80px;
+  }
 
-    .header {
-        padding-block: 20px 134px;
-    }
+  .header {
+    padding-block: 20px 134px;
+  }
 
-    .header__theme-menu {
-        justify-self: center;
-        margin-block: 0;
-    }
+  .header__theme-menu {
+    justify-self: center;
+    margin-block: 0;
+  }
 
-    .header__theme-menu-list {
-        flex-direction: row;
-        inline-size: auto;
-        block-size: 26px;
-    }
+  .header__theme-menu-list {
+    flex-direction: row;
+    inline-size: auto;
+    block-size: 26px;
+  }
 
-    .title {
-        font-size: 157px;
-    }
+  .title {
+    font-size: 157px;
+  }
 
-    .what {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas:
-            "title . ."
-            "multitasking food gadgets";
-    }
+  .what {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "title . ."
+      "multitasking food gadgets";
+  }
 
-    .footer__title {
-        font-size: 157px;
-    }
-
+  .footer__title {
+    font-size: 157px;
+  }
 }

@@ -32,7 +32,8 @@
   grid-template-rows: repeat(3, auto);
   max-inline-size: 100%;
   block-size: 100vh;
-  padding-block: calc(75px + 0.298 * (100vw - 375px)) calc(66px + 0.298 * (100vw - 375px));
+  padding-block: calc(75px + 0.298 * (100vw - 375px))
+    calc(66px + 0.298 * (100vw - 375px));
 }
 
 .corner {
@@ -151,9 +152,7 @@
   grid-row: 2 / 3;
   display: inline-block;
   align-self: center;
-  font-size: clamp(7.25rem,
-      7.0115rem + 1.0178vw,
-      7.5rem);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   /* расчет сгенерирован с сайта https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjMyMHB4IiwibWF4V2lkdGgiOiIxNDU2cHgiLCJtaW5Gb250U2l6ZSI6IjE0cHgiLCJtYXhGb250U2l6ZSI6IjIwcHgifQ%3D%3D */
   line-height: 82.5%;
   color: var(--title-color);
@@ -305,3 +304,4 @@
   color: var(--title-color);
   filter: drop-shadow(0.025em 0.025em var(--accent-color));
 }
+ 
