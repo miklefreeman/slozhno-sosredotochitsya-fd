@@ -1,16 +1,6 @@
 /* Основной набор переменных */
 :root {
-    --bg-color-light: #fff1f7;
-    --text-color-light: #353430;
-    --nav-color-light: #353430;
-    --accent-color-light: #ff8dcb;
-    --accent-color-special-light: transparent;
-    --color-special-element-light: transparent;
-    --title-color-light: #ffc2e6;
-    --title-color-focus-light: #353430;
-    --main-title-color-light: #ffc2e6;
-    --bg-image-light: url("../images/cover-image-light.png");
-
+    /* Переменные тёмной темы */
     --bg-color-dark: #000028;
     --text-color-dark: #f1b2ce;
     --nav-color-dark: #ff0070;
@@ -22,4 +12,17 @@
     --main-title-color-dark: #db00ff;
     --title-color-bottom-dark: #FF0070;
     --bg-image-dark: url("../images/cover-image-dark.png");
+
+    /* Переменные светлой темы */
+    --bg-color-light: #fff1f7;
+    --text-color-light: #353430;
+    --nav-color-light: #353430;
+    --accent-color-light: #ff8dcb;
+    --accent-color-special-light: transparent;
+    --color-special-element-light: transparent;
+    --title-color-light: #ffc2e6;
+    --title-color-focus-light: #353430;
+    --main-title-color-light: #ffc2e6;
+    --bg-image-light: url("../images/cover-image-light.png");
+
 }
