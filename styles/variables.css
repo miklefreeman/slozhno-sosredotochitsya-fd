@@ -1,0 +1,25 @@
+/* Основной набор переменных */
+:root {
+    --bg-color-light: #fff1f7;
+    --text-color-light: #353430;
+    --nav-color-light: #353430;
+    --accent-color-light: #ff8dcb;
+    --accent-color-special-light: transparent;
+    --color-special-element-light: transparent;
+    --title-color-light: #ffc2e6;
+    --title-color-focus-light: #353430;
+    --main-title-color-light: #ffc2e6;
+    --bg-image-light: url("../images/cover-image-light.png");
+
+    --bg-color-dark: #000028;
+    --text-color-dark: #f1b2ce;
+    --nav-color-dark: #ff0070;
+    --accent-color-dark: #ff0070;
+    --accent-color-special-dark: #ff0070;
+    --color-special-element-dark: rgba(255, 0, 112, 0.5);
+    --title-color-dark: #db00ff;
+    --title-color-focus-dark: #000028;
+    --main-title-color-dark: #db00ff;
+    --title-color-bottom-dark: #FF0070;
+    --bg-image-dark: url("../images/cover-image-dark.png");
+}
