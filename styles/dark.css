@@ -28,6 +28,8 @@
   --title-color: #000028;
   --main-title-color: #db00ff;
   --title-color-focus: #000028;
+  --title-color-bottom: #FF0070;
+  /*меняю цвет Как концентрироваться..*/
 }
 
 @media (prefers-color-scheme: dark) {
