@@ -18,16 +18,19 @@
   }
 
   .header {
-    padding-block: calc(192px - 0.672 * (100vw - 768px))
+    padding-block: calc(160px - 0.672 * (100vw - 768px))
       calc(173px - 0.1915 * (100vw - 768px));
   }
 
   .title {
-    margin-inline-start: -15px;
+    margin-inline-start: -19px;
+    margin-top: 93px;
   }
 
   .header__h3 {
-    inline-size: calc(364px + (100% - 364px) * 0.205);
+    inline-size: 363px;
+    height: 115px;
+    margin-block-end: 11px;
   }
 
   .main {

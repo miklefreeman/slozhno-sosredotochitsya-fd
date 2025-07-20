@@ -21,6 +21,8 @@
 
   .title {
     font-size: 157px;
+    margin-top: 210px;
+    margin-inline-start: -20px;
   }
 
   .what {
@@ -33,5 +35,16 @@
 
   .footer__title {
     font-size: 157px;
+  }
+
+  .why_multitasking {
+    width: 649px;
+  }
+  .what__h2 {
+    width: 315px;
+  }
+
+  .why {
+    grid-template-columns: repeat(3, auto);
   }
 }

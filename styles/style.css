@@ -32,7 +32,7 @@
   grid-template-rows: repeat(3, auto);
   max-inline-size: 100%;
   block-size: 100vh;
-  padding-block: calc(75px + 0.298 * (100vw - 375px))
+  padding-block: calc(44px + 0.298 * (100vw - 375px))
     calc(66px + 0.298 * (100vw - 375px));
   background-image: var(--bg-image);
   background-repeat: no-repeat;
@@ -163,6 +163,7 @@
   /*text-shadow: 4px 4px 0 var(--accent-color); */
   filter: drop-shadow(0.04em 0.04em var(--accent-color));
   margin-inline-start: calc(- (0.191px * (100vw - 375px)));
+  height: 180px;
 }
 
 .header__h3 {
@@ -183,7 +184,7 @@
     "what"
     "how"
     "illustration";
-  gap: 50px;
+  gap: 53px;
 }
 
 .why {
@@ -200,17 +201,20 @@
 
 .general-text {
   font-size: 18px;
-  color: var(--title-color-bottom-light);
+  color: var(--title-color-focus);
 }
 
 .title-decor {
   background-color: var(--accent-color);
-  margin-block-end: 10px;
+  margin-block-end: 1px;
   color: var(--title-color-focus);
+  font-size: 18px;
 }
 
 .simple-text {
   color: var(--text-color);
+  margin-top: 10px;
+  line-height: 23.3px;
 }
 
 .link {
@@ -254,6 +258,7 @@
     "nutrition"
     "reading";
   gap: 20px;
+  margin-top: 7px;
 }
 
 .how_title-decor {

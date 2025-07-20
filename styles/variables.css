@@ -1,29 +1,57 @@
-/* Основной набор переменных */
-:root {
-    /* Переменные тёмной темы */
-    --bg-color-dark: #000028;
-    --text-color-dark: #f1b2ce;
-    --nav-color-dark: #ff0070;
-    --accent-color-dark: #ff0070;
-    --accent-color-special-dark: #ff0070;
-    --color-special-element-dark: rgba(255, 0, 112, 0.5);
-    --title-color-dark: #db00ff;
-    --title-color-focus-dark: #000028;
-    --main-title-color-dark: #db00ff;
-    --title-color-bottom-dark: #FF0070;
-    --bg-image-dark: url("../images/cover-image-dark.png");
+:root.theme-light {
+  --bg-color: #fff1f7;
+  --text-color: #353430;
+  --nav-color: #353430;
+  --accent-color: #ff8dcb;
+  --accent-color-special: transparent;
+  --color-special-element: transparent;
+  --title-color: #ffc2e6;
+  --title-color-focus: #353430;
+  --main-title-color: #ffc2e6;
+  --bg-image: url("../images/cover-image-light.png");
+}
 
-    /* Переменные светлой темы */
-    --bg-color-light: #fff1f7;
-    --text-color-light: #353430;
-    --nav-color-light: #353430;
-    --accent-color-light: #ff8dcb;
-    --accent-color-special-light: transparent;
-    --color-special-element-light: transparent;
-    --title-color-light: #ffc2e6;
-    --title-color-focus-light: #353430;
-    --main-title-color-light: #ffc2e6;
-    --title-color-bottom-light: #353430;
-    --bg-image-light: url("../images/cover-image-light.png");
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #fff1f7;
+    --text-color: #353430;
+    --nav-color: #353430;
+    --accent-color: #ff8dcb;
+    --accent-color-special: transparent;
+    --color-special-element: transparent;
+    --title-color: #ffc2e6;
+    --title-color-focus: #353430;
+    --main-title-color: #ffc2e6;
+    --bg-image: url("../images/cover-image-light.png");
+  }
+}
 
+:root.theme-dark {
+  --bg-color: #000028;
+  --text-color: #f1b2ce;
+  --nav-color: #ff0070;
+  --accent-color: #ff0070;
+  --accent-color-special: #ff0070;
+  --color-special-element: rgba(255, 0, 112, 0.5);
+  --title-color: #db00ff;
+  --title-color-focus: #000028;
+  --main-title-color: #db00ff;
+  --title-color-bottom: #ff0070;
+  --bg-image: url("../images/cover-image-dark.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000028;
+    --text-color: #f1b2ce;
+    --nav-color: #ff0070;
+    --accent-color: #ff0070;
+    --accent-color-special: #ff0070;
+    --color-special-element: rgba(255, 0, 112, 0.5);
+    --title-color: #db00ff;
+    --title-color-focus: #000028;
+    --main-title-color: #db00ff;
+    --title-color-bottom: #ff0070;
+    --bg-image: url("../images/cover-image-dark.png");
+  }
 }
