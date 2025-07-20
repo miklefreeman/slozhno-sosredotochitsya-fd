@@ -32,7 +32,8 @@
   grid-template-rows: repeat(3, auto);
   max-inline-size: 100%;
   block-size: 100vh;
-  padding-block: calc(75px + 0.298 * (100vw - 375px)) calc(66px + 0.298 * (100vw - 375px));
+  padding-block: calc(75px + 0.298 * (100vw - 375px))
+    calc(66px + 0.298 * (100vw - 375px));
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-size: cover;
@@ -199,7 +200,7 @@
 
 .general-text {
   font-size: 18px;
-  color: var(--title-color-bottom);
+  color: var(--title-color-bottom-light);
 }
 
 .title-decor {
