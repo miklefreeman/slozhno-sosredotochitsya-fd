@@ -32,8 +32,7 @@
   grid-template-rows: repeat(3, auto);
   max-inline-size: 100%;
   block-size: 100vh;
-  padding-block: calc(44px + 0.298 * (100vw - 375px))
-    calc(66px + 0.298 * (100vw - 375px));
+  padding-block: calc(44px + 0.298 * (100vw - 375px)) calc(66px + 0.298 * (100vw - 375px));
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,16 +45,16 @@
 
 .corner-top {
   position: absolute;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--nav-color);
+  border-inline-end: 1px solid var(--nav-color);
   inset-block-start: calc(10px + (100vw - 375px) * 0.0254);
   inset-inline-end: 0;
 }
 
 .corner-bottom {
   position: absolute;
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--nav-color);
+  border-inline-start: 1px solid var(--nav-color);
   inset-block-end: calc(10px + (100vw - 375px) * 0.0254);
   inset-inline-start: 0;
 }
