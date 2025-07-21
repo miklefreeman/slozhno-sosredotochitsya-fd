@@ -14,7 +14,7 @@
   }
 
   .corner-bottom {
-    inset-block-end: 22px;
+    inset-block-end: 20px;
   }
 
   .header {
@@ -22,8 +22,8 @@
   }
 
   .title {
-    margin-inline-start: -19px;
-    margin-top: 93px;
+    margin-inline-start: -20px;
+    margin-top: 96px;
   }
 
   .header__h3 {
