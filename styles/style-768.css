@@ -34,7 +34,8 @@
   }
 
   .main {
-    grid-template-columns: repeat(3 1fr);
+    grid-template-columns: minmax(auto, 14.75rem) 1fr;
+    grid-auto-rows: auto;
     grid-template-areas:
       "why why why"
       "what what what"
@@ -44,14 +45,14 @@
   }
 
   .why {
-    grid-template-columns: repeat(3, fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: minmax(auto, 14.75rem) 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
       "title multitasking"
       "title dopamine";
-    gap: 53px;
+    gap: 1.25rem;
     margin-top: -1px;
-    margin-bottom: -28px;
+
   }
 
   .why__h2 {
@@ -60,6 +61,8 @@
     grid-auto-rows: auto;
     gap: 1.25rem;
     padding: 0 1.25rem;
+    height: 649px;
+    padding: 0;
   }
 
   .why_multitasking {
