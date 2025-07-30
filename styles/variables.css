@@ -46,6 +46,7 @@
   --content-color: #353430;
   --background-color: #fff1f7;
   --background-image: url("../images/cover-image-light.png");
+  --corner-color: #353430;
 }
 
 .theme-light .recording-indicator::after {

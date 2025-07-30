@@ -416,6 +416,28 @@ h4 {
     min-height: 768px;
   }
 
+  .content-section__title {
+    color: var(--title-color);
+  }
+
+  .content-section__heading {
+    background-color: var(--main-color);
+  }
+
+  .content-section__text {
+    color: var(--content-color);
+    font-family: IBM Plex Mono, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .content-section--focus-improvement .content-section__heading {
+    font-weight: 400;
+  }
+
   .content-section {
     margin-top: 70px;
     padding: 0 20px;
