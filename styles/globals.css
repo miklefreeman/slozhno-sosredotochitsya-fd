@@ -23,9 +23,10 @@ header {
 }
 
 ul {
-  margin: 0;
+  margin: -6px;
   padding: 0;
-  margin-right: -15px;
+  margin-right: -1px;
+  margin-top: -4px;
   list-style: none;
 }
 
