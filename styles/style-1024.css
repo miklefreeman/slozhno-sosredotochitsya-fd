@@ -17,15 +17,16 @@
   .header__theme-menu-list {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    gap: 10px;
-    width: 230px;
-    height: 26px;
+    gap: 7px;
+    width: 232px;
+    height: 28px;
     padding-top: 2px;
 
   }
 
   .site-header__title {
     min-width: 364px;
+    margin-left: -21px;
   }
 
   .site-header__subtitle {
