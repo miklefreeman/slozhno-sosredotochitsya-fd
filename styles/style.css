@@ -416,6 +416,11 @@ h4 {
     min-height: 768px;
   }
 
+  .content-section {
+    margin-top: 70px;
+    padding: 0 20px;
+  }
+
   .header__theme-menu {
     margin-top: 20px;
     margin-right: 0;
@@ -429,12 +434,12 @@ h4 {
 
   .header__theme-menu-list {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, auto);
-    gap: 7px;
+    gap: 25px;
     width: 232px;
     height: 28px;
     padding-top: 2px;
-
   }
 
   .site-header__title {
@@ -451,23 +456,30 @@ h4 {
 
   .content-section__title {
     min-width: 315px;
+    margin-bottom: -10px;
   }
 
   .content-section--focus-difficulty .content-section__list,
   .content-section.content-section--focus-improvement .focus-tips {
     max-width: calc(100% - 80px);
-    padding-right: 30px;
+    padding-right: 16px;
   }
 
   .content-section__text {
     max-width: 100%;
+    margin: -15px;
+    margin-top: 10px;
+    margin-left: 1px;
+    margin-bottom: 10px;
   }
 
-  .content-section.content-section--concentration-reducers .content-section__list {
+  .content-section.content-section--concentration-reducers
+    .content-section__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-content: space-between;
     width: 985px;
+    padding-top: 10px;
   }
 }
