@@ -42,6 +42,7 @@
   .content-section--focus-difficulty .content-section__list,
   .content-section.content-section--focus-improvement .focus-tips {
     max-width: calc(100% - 80px);
+    padding-right: 30px;
   }
 
   .content-section__text {
