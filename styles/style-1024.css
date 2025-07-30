@@ -1,60 +1,57 @@
-@media (width >=1024px) {
-  .page {
-    display: grid;
-    gap: 80px;
-  }
-
-  .header {
-    padding-block: 20px 134px;
+@media (min-width: 1024px) {
+  .site-header.corner-decoration {
+    min-height: 768px;
   }
 
   .header__theme-menu {
+    margin-top: 20px;
+    margin-right: 0;
     justify-self: center;
-    margin-block: -2px;
-    width: 215px;
+    align-self: start;
+  }
+
+  .header__theme-menu-item:not(:first-child) {
+    margin-top: 0;
   }
 
   .header__theme-menu-list {
-    flex-direction: row;
-    inline-size: auto;
-    block-size: 25px;
-    margin-top: -2px;
-  }
-
-  .title {
-    font-size: 157px;
-    margin-top: 259px;
-    margin-inline-start: -20px;
-  }
-
-  .what {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas:
-      "title . ."
-      "multitasking food gadgets";
-  }
-
-  .footer__title {
-    font-size: 157px;
-  }
-
-  .why_multitasking {
-    width: 649px;
-  }
-  .what__h2 {
-    width: 315px;
-  }
-
-  .why {
+    display: grid;
     grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    width: 230px;
+    height: 26px;
+    padding-top: 2px;
+
   }
 
-  .why__h2 {
-    grid-area: title;
-    grid-template-columns: minmax(auto, 14.75rem) 1fr;
-    grid-auto-rows: auto;
-    gap: 1.25rem;
-    padding: 0 1.25rem;
+  .site-header__title {
+    min-width: 364px;
+  }
+
+  .site-header__subtitle {
+    margin-top: 75px;
+    align-self: start;
+    min-width: 491px;
+    margin-right: -0;
+  }
+
+  .content-section__title {
+    min-width: 315px;
+  }
+
+  .content-section--focus-difficulty .content-section__list,
+  .content-section.content-section--focus-improvement .focus-tips {
+    max-width: calc(100% - 80px);
+  }
+
+  .content-section__text {
+    max-width: 100%;
+  }
+
+  .content-section.content-section--concentration-reducers .content-section__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: space-between;
   }
 }
