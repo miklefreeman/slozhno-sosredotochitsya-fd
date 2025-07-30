@@ -53,5 +53,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-content: space-between;
+    width: 985px;
   }
 }

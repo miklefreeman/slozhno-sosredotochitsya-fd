@@ -69,7 +69,7 @@
 
   .content-section--focus-difficulty .content-section__text,
   .content-section--focus-improvement .focus-tips {
-    width: min(1144px, calc(100vw - 296px));
+    width: min(1144px, calc(100vw - 280px));
   }
 
   .gallery {
