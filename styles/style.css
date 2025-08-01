@@ -442,9 +442,7 @@ h4 {
     min-height: 768px;
   }
 
-  .content-section__title {
-    color: var(--title-color);
-  }
+
 
   .content-section__heading {
     background-color: var(--main-color);
@@ -501,6 +499,7 @@ h4 {
   }
 
   .content-section__title {
+    color: var(--title-color);
     min-width: 315px;
     margin-bottom: -10px;
   }
