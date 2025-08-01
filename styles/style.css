@@ -327,7 +327,7 @@ h4 {
     max-width: 364px;
     margin-top: 108px;
     justify-self: end;
-    margin-right: -15px;
+    margin-right: 0px;
   }
 
   .content-section:first-child {
@@ -495,8 +495,7 @@ h4 {
     margin-bottom: 10px;
   }
 
-  .content-section.content-section--concentration-reducers
-    .content-section__list {
+  .content-section.content-section--concentration-reducers .content-section__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
