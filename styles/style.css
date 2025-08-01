@@ -456,6 +456,11 @@ h4 {
     line-height: 23.4px;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    max-width: 100%;
+    margin: -15px;
+    margin-top: 10px;
+    margin-left: 1px;
+    margin-bottom: 10px;
   }
 
 
@@ -510,13 +515,7 @@ h4 {
     padding-right: 16px;
   }
 
-  .content-section__text {
-    max-width: 100%;
-    margin: -15px;
-    margin-top: 10px;
-    margin-left: 1px;
-    margin-bottom: 10px;
-  }
+
 
   .content-section.content-section--concentration-reducers .content-section__list {
     display: grid;
