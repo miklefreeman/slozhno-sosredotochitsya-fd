@@ -293,8 +293,8 @@ h4 {
 
   .site-footer__title {
     text-shadow: 4px 4px var(--footer-shadow-color);
-    margin-bottom: -172px;
-    margin-left: -4px;
+    margin-bottom: -6px;
+    margin-left: -5px;
   }
 
   .content-section--focus-improvement .content-section__heading {

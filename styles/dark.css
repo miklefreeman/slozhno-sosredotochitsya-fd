@@ -1,0 +1,33 @@
+.theme-dark .app {
+    --main-color: #ff0070;
+    --menu-color: #ff0070;
+    --menu-hover: #ff007066;
+    --rec-color: #ff0070;
+    --title-color: #ff0070;
+    --subtitle-color: #000028;
+    --header-title-color: #000028;
+    --header-color: #db00ff;
+    --header-shadow-color: #ff8dcb;
+    --content-color: #f1b2ce;
+    --background-color: rgb(0, 0, 40);
+    --background-image: url("../images/cover-image-dark.png");
+    --corner-color: #ff0070;
+}
+
+@media (prefers-color-scheme: dark) {
+    .theme-auto .app {
+        --main-color: #ff0070;
+        --menu-color: #ff0070;
+        --menu-hover: #ff007066;
+        --rec-color: #ff0070;
+        --title-color: #ff0070;
+        --subtitle-color: #000028;
+        --header-title-color: #000028;
+        --header-color: #db00ff;
+        --header-shadow-color: #ff8dcb;
+        --content-color: #f1b2ce;
+        --background-color: rgb(0, 0, 40);
+        --background-image: url("../images/cover-image-dark.png");
+        --corner-color: #ff0070;
+    }
+}
