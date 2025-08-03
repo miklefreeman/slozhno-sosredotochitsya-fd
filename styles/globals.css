@@ -2,12 +2,15 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  font-family: "IBM Plex mono", monospace;
 }
 
 h1,
@@ -16,16 +19,13 @@ h3,
 h4,
 h5,
 h6,
-p,
-main,
-header {
+p {
   margin: 0;
 }
 
 ul {
   margin: 0;
   padding: 0;
-  /* margin-right: -15px; */
   list-style: none;
 }
 
@@ -40,6 +40,5 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  background: none;
-  border: none;
+  text-decoration: none;
 }

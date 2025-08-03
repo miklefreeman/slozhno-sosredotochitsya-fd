@@ -1,0 +1,28 @@
+:root {
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --decor-color: #ff0070;
+  --menu-color: #ff0070;
+  --h3-color: #000028;
+  --h2-color: #ff0070;
+  --active-color: #ff0070;
+  --hover-color: rgba(255, 0, 112, 0.5);
+  --description-color: #f1b2ce;
+  --text-size-main: 18px;
+  --text-weight-main: normal;
+  --text-weight-title: bold;
+  --text-size-title: 116px;
+  --bg-image-page: url("../images/cover-image-dark.png");
+}
+
+@media (prefers-color-scheme: light) {
+  .theme-auto .app-header__rec {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .theme-auto .app-header__rec {
+    display: block;
+  }
+}
