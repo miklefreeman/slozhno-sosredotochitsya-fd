@@ -8,7 +8,7 @@
 
 .highlight-block {
   background-color: var(--accent-color);
-  color: var(--h3-color);
+  color: var(--subheader-color);
   font-size: var(--text-size-main);
   font-weight: var(--text-weight-title);
   height: min-content;
@@ -189,6 +189,7 @@
 .focus-page {
   background: var(--bg-image-page) center/cover no-repeat;
   background-attachment: fixed;
+  background-color: var(--bg-image-color);
 }
 
 .focus-main {
@@ -223,7 +224,7 @@
 }
 
 .article-section__title {
-  color: var(--h2-color);
+  color: var(--secondary-title-color);
   font-size: var(--text-size-main);
   line-height: 1.3em;
 }
